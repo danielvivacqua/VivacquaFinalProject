@@ -1,0 +1,83 @@
+﻿header div{height:64px;}
+#logo {
+    background: #4fb1a2 url(../images/logo_header.png) center no-repeat content-box;
+
+}
+
+
+/*MAIN CONTENT*/
+body{
+    text-align:center;
+    
+}
+div{
+    border:1px solid black;
+
+}
+p{
+    font-weight:bold;
+}
+div.container-fluid{
+  /*let's get rid of that 15px right and left padding in this bootstrap class, but keep the rest.*/
+  padding-left:0;
+  padding-right:0;
+}
+div h1{font-size:22px;}/*overriding h1 size from bootstrap. You could have done this in the custom configuration.*/
+div h2{font-size:18px;}/*overriding h2 size from bootstrap. You could have done this in the custom configuration.*/
+.img-responsive{
+    /*adding support for background images to bootstrap's current class*/
+    background-size:100% auto;
+}
+col-md-3{
+    /*width:50%;*/
+    margin: 0 auto;
+}
+div.mainImage {
+    background-image: url('../images/Profile.jpg');
+}
+.bwhead {
+    background: #4fb1a2 center;
+    background-image: url('../images/BWHead.jpg');
+    background-size: cover;
+}
+.wcciclass {
+    background: #4fb1a2 center;
+    background-size: cover;
+    background-image: url('../images/WCCIClass.jpg');
+}
+div.blueback{
+    background-color:#4fb1a2;
+}
+div.promoArea{
+    min-height:350px;
+    
+}
+.whiteText{
+    color:#fff;
+    text-align:center;
+}
+div.square{
+ /*min-height:304.750px;*/
+ /*width:25%;*/
+ min-height:323px;
+}
+.vertical-center{
+  min-height: 350px; 
+  display:flex;
+  align-items: center;
+}
+.overlay {
+    margin:0 auto;
+    padding:20px;
+    background: #434647;
+    color: #fff;
+    opacity:.8;
+}
+.overlei{
+    margin:10px;
+    padding:5px;
+    background: #434647;
+    color: #fff;
+    opacity:.8;
+    border:2px solid #4fb1a2;
+}
