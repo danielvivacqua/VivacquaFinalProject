@@ -156,6 +156,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -164,12 +166,19 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\advancedDictionaryProject.jpg" />
     <Content Include="images\BWHead.jpg" />
+    <Content Include="images\Contact.jpg" />
+    <Content Include="images\DadSquare.jpg" />
     <Content Include="images\dayTenGPAProject.jpg" />
+    <Content Include="images\Dreamer.jpg" />
+    <Content Include="images\github-mark.png" />
     <Content Include="images\piggyBank.jpg" />
     <Content Include="images\Profile.jpg" />
     <Content Include="images\ShackMVC.jpg" />
+    <Content Include="images\StitchSquare.jpg" />
     <Content Include="images\WCCIClass.jpg" />
+    <Content Include="images\We-Can-Code-It-%28400x400%29.jpg" />
     <Content Include="images\week6BankAccountProject.jpg" />
+    <Content Include="images\WFamSquare.jpg" />
     <Content Include="Models\Projects.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Projects.edmx</DependentUpon>
@@ -180,8 +189,6 @@
       <DependentUpon>Projects.edmx</DependentUpon>
       <LastGenOutput>Projects.cs</LastGenOutput>
     </Content>
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Projects.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Projects.Designer.cs</LastGenOutput>
@@ -189,7 +196,17 @@
     <Content Include="Models\Projects.edmx.diagram">
       <DependentUpon>Projects.edmx</DependentUpon>
     </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -225,9 +242,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />

@@ -2,28 +2,78 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container-fluid">
-    <header>
+@*<div class="container-fluid">*@
+    @*<header>
         <div class="col-md-12">
             <h2>Daniel Vivacqua's Portfolio</h2>
         </div>
 
-    </header>
+    </header>*@
 
 
-    <div class="col-md-9 promoArea mainImage img-responsive vertical-center">
-       
+    
+<div class="row">
+    <div class="col-md-6 promoArea mainImage img-responsive vertical-center plumbrdr">
+
     </div>
 
-    <div class="col-md-3 promoArea "></div>
+    <div class="col-md-6 promoArea plumbrdr dreamer">
 
-
-
-    <div class="col-md-3 square bwhead">             <h2>About Me</h2>                      </div>         <div class="col-md-3 square">             <div class="overlei">                 <h2>Contact</h2>                 <p class="whiteText">                     LinkedIn, GitHub, and Other Ways to Contact Me                     <button type="button" class="btn btn-info">Explore</button>                 </p>             </div>         </div>         <div class="col-md-3 square wcciclass">             <div class="overlei">                 <h2>Projects</h2>                 <p class="whiteText">                 The Work I've Done at We Can {Code} IT.                 <button type="button" class="btn btn-info">*</button>                 </p>             </div>         </div> 
-    <footer>
-        <div class="col-md-12">Footer text.</div>
-    </footer>
+    </div>
 </div>
+
+
+
+<div class="row">
+    <div class="col-md-3 square bwhead plumbrdr">
+        <div class="overlei">
+            <h2>About Me</h2>
+            <p class="whiteText">
+                What Brings Me Here
+                <a class="btn btn-plum" href="~/Home/About">
+                    <span class="glyphicon glyphicon-arrow-right">
+                    </span>
+                </a>
+        </div>
+    </div>
+
+    <div class="col-md-3 square plumbrdr contact">
+        <div class="overlei">
+            <h2>Contact</h2>
+            <p class="whiteText">
+                LinkedIn, GitHub, and Other Ways to Contact Me
+                <a class="btn btn-plum" href="~/Home/Contact">
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-3 square wcciclass plumbrdr">
+        <div class="overlei">
+            <h2>Projects</h2>
+            <p class="whiteText">
+                The Work I've Done at We Can {Code} IT.
+                <a class="btn btn-plum" href="~/Projects/Index">
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-3 square plumbrdr wccipromo">
+        <div class="overlei">
+            <h2>About We Can {Code} IT</h2>
+            <p class="whiteText">
+                <a class="btn btn-plum" href="https://wecancodeit.org/about-us/">
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div> 
+    @*</div>*@
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

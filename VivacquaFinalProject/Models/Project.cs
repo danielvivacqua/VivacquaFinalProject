@@ -11,13 +11,21 @@ namespace VivacquaFinalProject.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
     public partial class Project
     {
         public int ProjectID { get; set; }
+
+        [DisplayName("Project Name")]
         public string ProjectName { get; set; }
+
+        [DisplayName("Project Description")]
         public string ProjectDescription { get; set; }
+
+        [DisplayName("Project Image")]
         public string ProjectImage { get; set; }
+
+        [DisplayName("Project Link")]
         public string ProjectLink { get; set; }
     }
 }

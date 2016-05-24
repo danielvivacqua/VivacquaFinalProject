@@ -1,51 +1,31 @@
 ﻿@model IEnumerable<VivacquaFinalProject.Models.Project>
 
-@{
-    ViewBag.Title = "Index";
-}
+<h1 class="tightoverlay">
+    Projects
+</h1>
 
-<h2>Index</h2>
+<div class="row">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ProjectName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProjectDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProjectImage)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProjectLink)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProjectName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProjectDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProjectImage)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProjectLink)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
-        </td>
-    </tr>
-}
-
-</table>
+    @foreach (var item in Model)
+    {
+        <div class="boldplumbrdr col-md-12 thistle">
+            <p>
+                <img src="@Html.DisplayFor(modelItem => item.ProjectImage)" height="100" width="100" />
+            </p>
+            <p class="tightoverlay">
+                @Html.DisplayFor(modelItem => item.ProjectName)
+            </p>
+            <p>
+                @Html.DisplayFor(modelItem => item.ProjectDescription)
+            </p>
+            <p>
+                <a href="@Html.DisplayFor(modelItem => item.ProjectLink)">@Html.DisplayFor(modelItem => item.ProjectLink)</a>
+            </p>
+            @*<td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
+                </td>*@
+        </div>
+    }
+</div>
