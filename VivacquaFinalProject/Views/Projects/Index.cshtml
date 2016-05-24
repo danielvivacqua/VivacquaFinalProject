@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<VivacquaFinalProject.Models.Project>
 
-<h1 class="tightoverlay">
+<h1 class="overlay">
     Projects
 </h1>
 
@@ -12,8 +12,10 @@
             <p>
                 <img src="@Html.DisplayFor(modelItem => item.ProjectImage)" height="200" width="200" class="toppedoff"/>
             </p>
-            <p class="tightoverlay">
-                @Html.DisplayFor(modelItem => item.ProjectName)
+            <p>
+                <span class="tightoverlay">
+                    @Html.DisplayFor(modelItem => item.ProjectName)
+                </span>
             </p>
             <p>
                 @Html.DisplayFor(modelItem => item.ProjectDescription)

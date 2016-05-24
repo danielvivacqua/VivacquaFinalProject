@@ -1,8 +1,4 @@
 ﻿header div{height:64px;}
-#logo {
-    background: #CD96CD url(../images/logo_header.png) center no-repeat content-box;
-
-}
 
 /*MAIN CONTENT*/
 body{
@@ -13,21 +9,20 @@ body{
 p{
     font-weight:bold;
 }
-div h1{font-size:22px;}/*overriding h1 size from bootstrap. You could have done this in the custom configuration.*/
-div h2{font-size:18px;}/*overriding h2 size from bootstrap. You could have done this in the custom configuration.*/
+div h1{font-size:22px;}/*overriding h1 size from bootstrap.*/
+div h2{font-size:18px;}
 .img-responsive{
-    /*adding support for background images to bootstrap's current class*/
     background-size:100% auto;
 }
 col-md-3{
-    /*width:50%;*/
     margin: 0 auto;
 }
+
+/*Image backgrounds*/
 div.mainImage {
     background-image: url('../images/Profile.jpg');
     background-size: cover;
 }
-
 .bwhead {
     background: #CD96CD center;
     background-image: url('../images/BWHead.jpg');
@@ -78,6 +73,7 @@ div.mainImage {
     background-size: cover;
     background-image: url('../images/Contact.jpg');
 }
+
 div.plumback{
     background-color:#CD96CD;
 }
@@ -108,6 +104,8 @@ div.square{
 .thistle{
     background:#D8BFD8;
 }
+
+/*These are variations on my overlay styling*/
 .overlay {
     margin:0;
     padding:5px;
@@ -117,7 +115,8 @@ div.square{
     border:2px solid #CD96CD;
 }
 .tightoverlay{
-    margin:0 425px 0 425px;
+    margin:initial;
+    width:auto;
     padding:5px;
     background: #434647;
     color: #fff;
@@ -125,7 +124,6 @@ div.square{
     border:2px solid #CD96CD;
 }
 .overlei{
-    
     margin:180px 20px 0px 20px;
     padding:5px;
     background: #434647;
@@ -133,6 +131,8 @@ div.square{
     opacity:.8;
     border:2px solid #CD96CD;
 }
+
+/*All of the button styling below was taken from a Button customizing website*/
 .btn-plum { 
   color: #ffffff; 
   background-color: #CD96CD; 
@@ -178,6 +178,10 @@ fieldset[disabled] .btn-plum.active {
   color: #CD96CD; 
   background-color: #ffffff; 
 }
+
+
+
+
 .plumbrdr{
 
     border:0.5px solid #CD96CD;
@@ -186,11 +190,13 @@ fieldset[disabled] .btn-plum.active {
 
     border:2.5px solid #CD96CD;
 }
-#footsie{
+
+/*I wanted to play with my footer, but it turns out I didn't need to*/
+/*#footsie{
     background-color:#5C246E;
     color:#fff;
 }
 footer{
     height:25px;
     background:bottom;
-}
+}*/
