@@ -171,6 +171,8 @@
     <Content Include="images\dayTenGPAProject.jpg" />
     <Content Include="images\Dreamer.jpg" />
     <Content Include="images\github-mark.png" />
+    <Content Include="images\githublogolarge.jpg" />
+    <Content Include="images\LinkedInLogoLarge.png" />
     <Content Include="images\piggyBank.jpg" />
     <Content Include="images\Profile.jpg" />
     <Content Include="images\ShackMVC.jpg" />

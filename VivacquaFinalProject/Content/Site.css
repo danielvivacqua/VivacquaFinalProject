@@ -27,10 +27,21 @@ div.mainImage {
     background-image: url('../images/Profile.jpg');
     background-size: cover;
 }
+
 .bwhead {
     background: #CD96CD center;
     background-image: url('../images/BWHead.jpg');
     background-size: cover;
+}
+.linkedin {
+    background: #CD96CD center;
+    background-size: cover;
+    background-image: url('../images/LinkedInLogoLarge.png');
+}
+.githublogo {
+    background: #CD96CD center;
+    background-size: cover;
+    background-image: url('../images/githublogolarge.jpg');
 }
 .wcciclass {
     background: #CD96CD center;
@@ -87,6 +98,12 @@ div.square{
   min-height: 350px; 
   display:flex;
   align-items: center;
+}
+.taller{
+    min-height: 500px;
+}
+.toppedoff{
+    padding-top:5px;
 }
 .thistle{
     background:#D8BFD8;
