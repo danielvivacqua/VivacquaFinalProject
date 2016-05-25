@@ -1,20 +1,38 @@
-﻿header div{height:64px;}
+﻿header div {
+    height: 64px;
+}
 
 /*MAIN CONTENT*/
-body{
-    text-align:center;
-    padding-top:51px;
+body {
+    text-align: center;
+    padding-top: 51px;
 }
 
-p{
-    font-weight:bold;
+p {
+    font-weight: bold;
 }
-div h1{font-size:22px;}/*overriding h1 size from bootstrap.*/
-div h2{font-size:18px;}
-.img-responsive{
-    background-size:100% auto;
+
+div h1 {
+    font-size: 22px;
 }
-col-md-3{
+/*overriding h1 size from bootstrap.*/
+div h2 {
+    font-size: 18px;
+}
+
+.uniheight{
+    min-height:320px;
+}
+
+.leftfont{
+    text-align:left;
+}
+
+.img-responsive {
+    background-size: 100% auto;
+}
+
+col-md-3 {
     margin: 0 auto;
 }
 
@@ -23,172 +41,189 @@ div.mainImage {
     background-image: url('../images/Profile.jpg');
     background-size: cover;
 }
+
 .bwhead {
     background: #CD96CD center;
     background-image: url('../images/BWHead.jpg');
     background-size: cover;
 }
+
 .linkedin {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/LinkedInLogoLarge.png');
 }
+
 .githublogo {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/githublogolarge.jpg');
 }
+
 .wcciclass {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/WCCIClass.jpg');
 }
+
 .wccipromo {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/We-Can-Code-It-(400x400).jpg');
 }
+
 .dad {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/DadSquare.jpg');
 }
+
 .wfam {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/WFamSquare.jpg');
 }
+
 .stitch {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/StitchSquare.jpg');
 }
-.dreamer{
+
+.dreamer {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/Dreamer.jpg');
 }
+
 .contact {
     background: #CD96CD center;
     background-size: cover;
     background-image: url('../images/Contact.jpg');
 }
 
-div.plumback{
-    background-color:#CD96CD;
+div.plumback {
+    background-color: #CD96CD;
 }
-div.promoArea{
-    min-height:350px;
-    
+
+div.promoArea {
+    min-height: 350px;
 }
-.whiteText{
-    color:#fff;
-    text-align:center;
+
+.whiteText {
+    color: #fff;
+    text-align: center;
 }
-div.square{
- /*min-height:304.750px;*/
- /*width:25%;*/
- min-height:323px;
+
+div.square {
+    /*min-height:304.750px;*/
+    /*width:25%;*/
+    min-height: 323px;
 }
-.vertical-center{
-  min-height: 350px; 
-  display:flex;
-  align-items: center;
+
+.vertical-center {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
 }
-.taller{
+
+.taller {
     min-height: 500px;
 }
-.toppedoff{
-    padding-top:5px;
+
+.toppedoff {
+    padding-top: 5px;
 }
-.thistle{
-    background:#D8BFD8;
+
+.thistle {
+    background: #D8BFD8;
 }
 
 /*These are variations on my overlay styling*/
 .overlay {
-    margin:0;
-    padding:5px;
+    margin: 0;
+    padding: 5px;
     background: #434647;
     color: #fff;
-    opacity:.8;
-    border:2px solid #CD96CD;
+    opacity: .8;
+    border: 2px solid #CD96CD;
 }
-.tightoverlay{
-    margin:initial;
-    width:auto;
-    padding:5px;
+
+.tightoverlay {
+    margin: initial;
+    width: auto;
+    padding: 5px;
     background: #434647;
     color: #fff;
-    opacity:.8;
-    border:2px solid #CD96CD;
+    opacity: .8;
+    border: 2px solid #CD96CD;
 }
-.overlei{
-    margin:180px 20px 0px 20px;
-    padding:5px;
+
+.overlei {
+    margin: 180px 20px 0px 20px;
+    padding: 5px;
     background: #434647;
     color: #fff;
-    opacity:.8;
-    border:2px solid #CD96CD;
+    opacity: .8;
+    border: 2px solid #CD96CD;
 }
 
 /*All of the button styling below was taken from a Button customizing website*/
-.btn-plum { 
-  color: #ffffff; 
-  background-color: #CD96CD; 
-  border-color: #CD96CD; 
-} 
- 
-.btn-plum:hover, 
-.btn-plum:focus, 
-.btn-plum:active, 
-.btn-plum.active, 
-.open .dropdown-toggle.btn-plum { 
-  color: #ffffff; 
-  background-color: #49247A; 
-  border-color: #CD96CD; 
-} 
- 
-.btn-plum:active, 
-.btn-plum.active, 
-.open .dropdown-toggle.btn-plum { 
-  background-image: none; 
-} 
- 
-.btn-plum.disabled, 
-.btn-plum[disabled], 
-fieldset[disabled] .btn-plum, 
-.btn-plum.disabled:hover, 
-.btn-plum[disabled]:hover, 
-fieldset[disabled] .btn-plum:hover, 
-.btn-plum.disabled:focus, 
-.btn-plum[disabled]:focus, 
-fieldset[disabled] .btn-plum:focus, 
-.btn-plum.disabled:active, 
-.btn-plum[disabled]:active, 
-fieldset[disabled] .btn-plum:active, 
-.btn-plum.disabled.active, 
-.btn-plum[disabled].active, 
-fieldset[disabled] .btn-plum.active { 
-  background-color: #CD96CD; 
-  border-color: #CD96CD; 
-} 
- 
-.btn-plum .badge { 
-  color: #CD96CD; 
-  background-color: #ffffff; 
+.btn-plum {
+    color: #ffffff;
+    background-color: #CD96CD;
+    border-color: #CD96CD;
 }
 
+    .btn-plum:hover,
+    .btn-plum:focus,
+    .btn-plum:active,
+    .btn-plum.active,
+    .open .dropdown-toggle.btn-plum {
+        color: #ffffff;
+        background-color: #49247A;
+        border-color: #CD96CD;
+    }
+
+    .btn-plum:active,
+    .btn-plum.active,
+    .open .dropdown-toggle.btn-plum {
+        background-image: none;
+    }
+
+    .btn-plum.disabled,
+    .btn-plum[disabled],
+    fieldset[disabled] .btn-plum,
+    .btn-plum.disabled:hover,
+    .btn-plum[disabled]:hover,
+    fieldset[disabled] .btn-plum:hover,
+    .btn-plum.disabled:focus,
+    .btn-plum[disabled]:focus,
+    fieldset[disabled] .btn-plum:focus,
+    .btn-plum.disabled:active,
+    .btn-plum[disabled]:active,
+    fieldset[disabled] .btn-plum:active,
+    .btn-plum.disabled.active,
+    .btn-plum[disabled].active,
+    fieldset[disabled] .btn-plum.active {
+        background-color: #CD96CD;
+        border-color: #CD96CD;
+    }
+
+    .btn-plum .badge {
+        color: #CD96CD;
+        background-color: #ffffff;
+    }
 
 
 
-.plumbrdr{
 
-    border:0.5px solid #CD96CD;
+.plumbrdr {
+    border: 0.5px solid #CD96CD;
 }
-.boldplumbrdr{
 
-    border:2.5px solid #CD96CD;
+.boldplumbrdr {
+    border: 2.5px solid #CD96CD;
 }
 
 /*I wanted to play with my footer, but it turns out I didn't need to*/

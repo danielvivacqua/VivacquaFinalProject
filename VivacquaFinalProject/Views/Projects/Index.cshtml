@@ -1,33 +1,44 @@
 ﻿@model IEnumerable<VivacquaFinalProject.Models.Project>
-
+@{
+    ViewBag.Title = "Projects";
+}
 <h1 class="overlay">
     Projects
 </h1>
 
 <div class="row">
 
+    @* This loop generates each col-md-12 div. It reads the information from the table, such as the GitHub url and the
+        image url, and generates functional links and images that appear for each one.*@
+
     @foreach (var item in Model)
     {
-        <div class="boldplumbrdr col-md-12 thistle">
-            <p>
-                <img src="@Html.DisplayFor(modelItem => item.ProjectImage)" height="200" width="200" class="toppedoff"/>
-            </p>
-            <p>
-                <span class="tightoverlay">
-                    @Html.DisplayFor(modelItem => item.ProjectName)
-                </span>
-            </p>
-            <p>
-                @Html.DisplayFor(modelItem => item.ProjectDescription)
-            </p>
-            <p>
-                <a href="@Html.DisplayFor(modelItem => item.ProjectLink)">@Html.DisplayFor(modelItem => item.ProjectLink)</a>
-            </p>
-            @*<td>
-                    @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
-                    @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
-                </td>*@
+        <div class="boldplumbrdr col-md-4 thistle">
+            <div class="uniheight">
+                <p>
+                    <img src="@Html.DisplayFor(modelItem => item.ProjectImage)" height="200" width="200" class="toppedoff" />
+                </p>
+
+                <p>
+                    <span class="tightoverlay">
+                        @Html.DisplayFor(modelItem => item.ProjectName)
+                    </span>
+                </p>
+
+                <p>
+                    @Html.DisplayFor(modelItem => item.ProjectDescription)
+                </p>
+
+                <p>
+                    <a href="@Html.DisplayFor(modelItem => item.ProjectLink)">@Html.DisplayFor(modelItem => item.ProjectLink)</a>
+                </p>
+                @*I left this code below in case I need it later.*@
+                @*<p>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
+               </p>*@
+            </div>
         </div>
     }
 </div>

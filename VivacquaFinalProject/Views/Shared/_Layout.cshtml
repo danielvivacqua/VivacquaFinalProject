@@ -23,6 +23,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    @*Adding a Projects link to the Nav bar so that every page is accessible at all times*@
+                    <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
                 </ul>
             </div>
         </div>
@@ -32,8 +35,8 @@
         <hr />
     </div>
     @*<footer class="plumbrdr" id="footsie">
-        Footer text.
-    </footer>*@
+            Footer text.
+        </footer>*@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

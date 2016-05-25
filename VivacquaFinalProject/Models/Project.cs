@@ -16,6 +16,7 @@ namespace VivacquaFinalProject.Models
     {
         public int ProjectID { get; set; }
 
+        //Putting data annotations here, even though they aren't used in my Views, just in case for later.
         [DisplayName("Project Name")]
         public string ProjectName { get; set; }
 
