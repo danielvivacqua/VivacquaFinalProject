@@ -28,6 +28,10 @@ div h2 {
     text-align:left;
 }
 
+.smallcaps{
+    font-variant:small-caps;
+}
+
 .img-responsive {
     background-size: 100% auto;
 }
